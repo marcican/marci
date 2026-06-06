@@ -1,19 +1,100 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<button class="btn btn-primary">
-		DaisyUI funziona 🎉
-	</button>
 
-	<h1 class="text-5xl font-bold text-blue-600">
-		Tailwind funziona 🎉
-	</h1>
+<!-- NAVBAR -->
+<div class="navbar bg-base-100 shadow-md px-6">
+  <div class="flex-1">
+    <a class="text-xl font-serif font-bold">Florist Premium</a>
+  </div>
+  <div class="flex-none">
+    <a class="btn btn-ghost">Home</a>
+    <a class="btn btn-ghost">Matrimoni</a>
+    <a class="btn btn-ghost">Contatti</a>
+  </div>
+</div>
 
-	<Welcome />
+<!-- HERO -->
+<section class="hero min-h-[70vh] bg-base-200">
+  <div class="hero-content text-center">
+    <div class="max-w-xl">
+      <h1 class="text-5xl font-bold font-serif">
+        Fiori che raccontano emozioni
+      </h1>
+      <p class="py-6 text-lg">
+        Creiamo composizioni floreali eleganti per matrimoni, eventi e momenti speciali.
+      </p>
+      <a href="#contatti" class="btn btn-primary">
+        Ordina su WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-8 font-serif">
+    Le nostre creazioni
+  </h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card bg-base-100 shadow-xl">
+      <figure><img src="https://images.unsplash.com/photo-1526045478516-99145907023c" /></figure>
+      <div class="card-body">
+        <h3 class="card-title">Bouquet Primavera</h3>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <figure><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" /></figure>
+      <div class="card-body">
+        <h3 class="card-title">Matrimonio Elegante</h3>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <figure><img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551" /></figure>
+      <div class="card-body">
+        <h3 class="card-title">Composizione Luxury</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATRIMONI -->
+<section class="bg-base-200 py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold font-serif">Matrimoni & Eventi</h2>
+    <p class="py-6">
+      Realizziamo allestimenti floreali su misura per matrimoni, cerimonie ed eventi esclusivi.
+    </p>
+    <a class="btn btn-secondary">Richiedi preventivo</a>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section id="contatti" class="py-16 px-6 text-center">
+  <h2 class="text-3xl font-bold font-serif mb-4">Contattaci</h2>
+
+  <p class="mb-6">Scrivici su WhatsApp per ordini o informazioni rapide</p>
+
+  <a
+    class="btn btn-success btn-lg"
+    href="https://wa.me/39XXXXXXXXXX"
+    target="_blank"
+  >
+    Apri WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer footer-center p-10 bg-base-300 text-base-content">
+  <div>
+    <p class="font-serif text-lg">Florist Premium</p>
+    <p>Fiori che emozionano ogni giorno</p>
+  </div>
+</footer>
+
 </Layout>
