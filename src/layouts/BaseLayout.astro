@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+const { title = "I fiori di Angelica - composizioni floreali, eventi" } = Astro.props;
+---
+
+<html lang="it" data-theme="valentine">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+
+  <body class="bg-base-100 text-base-content">
+    <slot />
+  </body>
+</html>

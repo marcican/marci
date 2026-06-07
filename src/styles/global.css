@@ -1,8 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* palette soft per fioraio */
-:root {
-  --p: #a7c4a0; /* verde salvia */
-  --s: #f6e7d7; /* beige */
+body {
+  font-family: ui-sans-serif, system-ui;
+}
+
+/* look più editoriale */
+h1, h2, h3 {
+  font-family: ui-serif, Georgia, serif;
+  letter-spacing: -0.02em;
 }
