@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: "https://marcican.github.io",
   output: "static",
-  base: "/",
+  base: "/marci/",
   vite: {
     plugins: [tailwindcss()]
   }
